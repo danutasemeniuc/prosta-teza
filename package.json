@@ -1,0 +1,47 @@
+{
+  "name": "prosta-teza",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Fullstack application with Vue.js frontend and Express backend",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\" --names \"backend,frontend\" --prefix-colors \"cyan,magenta\"",
+    "dev:frontend": "npm run dev --workspace=frontend",
+    "dev:backend": "npm run dev --workspace=backend",
+    "build:frontend": "npm run build --workspace=frontend",
+    "lint": "npm run lint --workspaces",
+    "format": "npm run format --workspaces",
+    "db:migrate": "npm run db:migrate --workspace=backend",
+    "db:generate": "npm run db:generate --workspace=backend",
+    "db:studio": "npm run db:studio --workspace=backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danutasemeniuc/prosta-teza.git"
+  },
+  "keywords": [
+    "fullstack",
+    "vue",
+    "express",
+    "prisma",
+    "postgresql"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danutasemeniuc/prosta-teza/issues"
+  },
+  "homepage": "https://github.com/danutasemeniuc/prosta-teza#readme",
+  "devDependencies": {
+    "@antfu/eslint-config": "^6.7.3",
+    "@eslint/js": "^9.39.2",
+    "concurrently": "^9.2.1",
+    "eslint": "^9.39.2",
+    "eslint-plugin-vue": "^10.6.2",
+    "globals": "^16.5.0",
+    "prettier": "^3.7.4"
+  }
+}
