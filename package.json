@@ -7,6 +7,23 @@
     "frontend",
     "backend"
   ],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/danutasemeniuc/prosta-teza#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danutasemeniuc/prosta-teza.git"
+  },
+  "bugs": {
+    "url": "https://github.com/danutasemeniuc/prosta-teza/issues"
+  },
+  "keywords": [
+    "fullstack",
+    "vue",
+    "express",
+    "prisma",
+    "postgresql"
+  ],
   "scripts": {
     "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\" --names \"backend,frontend\" --prefix-colors \"cyan,magenta\"",
     "dev:frontend": "npm run dev --workspace=frontend",
@@ -18,23 +35,6 @@
     "db:generate": "npm run db:generate --workspace=backend",
     "db:studio": "npm run db:studio --workspace=backend"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/danutasemeniuc/prosta-teza.git"
-  },
-  "keywords": [
-    "fullstack",
-    "vue",
-    "express",
-    "prisma",
-    "postgresql"
-  ],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/danutasemeniuc/prosta-teza/issues"
-  },
-  "homepage": "https://github.com/danutasemeniuc/prosta-teza#readme",
   "devDependencies": {
     "@antfu/eslint-config": "^6.7.3",
     "@eslint/js": "^9.39.2",
